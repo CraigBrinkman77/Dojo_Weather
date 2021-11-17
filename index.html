@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Jose Weather</title>
+    <link rel="stylesheet" href="syle.css">
+</head>
+<body>
+<!-- Header -->
+    <div class="header flex align justify">
+        <div>
+            <h1>Dojo Weather</h1>
+        </div>
+        <div class="city-list">
+            <ul class="flex">
+                <li onclick="alert('Loading Weather Report....')">Burbank</li>
+                <li onclick="alert('Loading Weather Report....')">Chicago</li>
+                <li onclick="alert('Loading Weather Report....')">Dallas</li>
+            </ul>
+        </div>
+    </div>
+
+<!-- body -->
+<div class="main">
+    <div class="cookies flex align around">
+        <img src="cookie.png" alt="">
+        <div>
+            <h1>Stop! Cookie Time!!</h1>
+            <p> We use cookies (sadly not the edible ones) tp personalize<br>
+                content and ads, to provide social media features<br>
+                and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button onclick="remove()">I accept</button>
+
+    </div>
+
+    <!-- Weather boxes  -->
+    <div class="flex justify">
+        <h1>San Jose</h1>
+        <div class="flex align justify">
+            <p>show temperature in:</p>
+            <select>
+                <option>F</option>
+                <option>C</option>
+            </select>
+        </div>
+    </div>
+    <hr>
+    <div class="flex justify">
+        <div class="weather flex align justify">
+            <div class="forecast flex align">
+                <h1>Today</h1>
+                <img src="some_rain.png" alt="">
+                <p>some rain</p>
+                <div class="flex align justify">
+                    <h2 class="temp-high">24</h2>
+                
+                    <h2 class="temp-low">18</h2>
+                </div>
+            </div>
+        </div>
+        <div class="weather flex align justify">
+            <div class="forecast flex align">
+                <h1>Tomorrow</h1>
+                <img src="some_sun.png" alt="">
+                <p>some sun</p>
+                <div class="flex align justify">
+                    <h2 class="temp-high">27</h2>
+                
+                    <h2 class="temp-low">19</h2>
+                </div>
+            </div>
+        </div>
+        <div class="weather flex align justify">
+            <div class="forecast flex align">
+                <h1>Friday</h1>
+                <img src="some_clouds.png" alt="">
+                <p>some clouds</p>
+                <div class="flex align justify">
+                    <h2 class="temp-high">21</h2>
+                
+                    <h2 class="temp-low">16</h2>
+                </div>
+            </div>
+        </div>
+        <div class="weather flex align justify">
+            <div class="forecast flex align">
+                <h1>Saturday</h1>
+                <img src="some_sun.png" alt="">
+                <p>some sun</p>
+                <div class="flex align justify">
+                    <h2 class="temp-high">26</h2>
+                
+                    <h2 class="temp-low">21</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
